@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Amazon Sign In Clone</title>
+  <title>Amazon UI Demo (Educational)</title>
   <style>
     body {
       margin: 0;
@@ -14,7 +14,6 @@
       align-items: center;
     }
 
-    /* Logo */
     .logo {
       margin-top: 20px;
       font-size: 36px;
@@ -26,7 +25,6 @@
       color: #ff9900;
     }
 
-    /* Main box */
     .signin-box {
       background: #fff;
       width: 350px;
@@ -37,8 +35,14 @@
     }
 
     .signin-box h1 {
-      font-size: 28px;
+      font-size: 26px;
       font-weight: 400;
+      margin-bottom: 10px;
+    }
+
+    .disclaimer {
+      font-size: 12px;
+      color: #b12704;
       margin-bottom: 15px;
     }
 
@@ -48,7 +52,6 @@
     }
 
     input {
-      max-width: 328px;
       width: 100%;
       padding: 10px;
       margin-top: 5px;
@@ -68,33 +71,9 @@
       font-size: 15px;
     }
 
-    .btn:hover {
-      background-color: #e2b33c;
-    }
-
     .text {
       font-size: 12px;
       margin-top: 15px;
-    }
-
-    .text a {
-      color: #0066c0;
-      text-decoration: none;
-    }
-
-    .text a:hover {
-      text-decoration: underline;
-    }
-
-    .help {
-      margin-top: 15px;
-      font-size: 13px;
-    }
-
-    .divider {
-      height: 1px;
-      background: #e7e7e7;
-      margin: 20px 0;
     }
 
     .footer {
@@ -103,12 +82,6 @@
       color: #555;
       text-align: center;
     }
-
-    .footer a {
-      margin: 0 10px;
-      color: #0066c0;
-      text-decoration: none;
-    }
   </style>
 </head>
 <body>
@@ -116,39 +89,22 @@
   <div class="logo">amazon<span>.</span></div>
 
   <div class="signin-box">
-    <h1>Sign in or create account</h1>
+    <h1>Demo Sign In Page</h1>
 
-    <label>Enter mobile number or email</label>
-    <input type="text" placeholder="Email or mobile phone number">
-
-    <button class="btn">Continue</button>
-
-    <p class="text">
-      By continuing, you agree to Amazon's 
-      <a href="#">Conditions of Use</a> and 
-      <a href="#">Privacy Notice</a>.
+    <p class="disclaimer">
+      ⚠️ This is a UI demo project for learning HTML & CSS only.  
+      No real login, data collection, or authentication is implemented.
     </p>
 
-    <div class="help">
-      <a href="#">Need help?</a>
-    </div>
+    <label>Demo input (not real)</label>
+    <input type="text" placeholder="Example: user@email.com">
 
-    <div class="divider"></div>
-
-    <p><strong>Buying for work?</strong></p>
-    <a href="#">Create a free business account</a>
+    <button class="btn" onclick="alert('Demo only – no action')">Continue</button>
   </div>
 
   <div class="footer">
-    <a href="#">Conditions of Use</a>
-    <a href="#">Privacy Notice</a>
-    <a href="#">Help</a>
-    <p>© 1996–2025, Amazon.com, Inc. or its affiliates</p>
+    <p>Educational project – Not affiliated with Amazon</p>
   </div>
 
-   <footer>
-        <p><a href="#">Conditions of Use</a> | <a href="#">Privacy Notice</a> | <a href="#">Help</a></p>
-        <p>© 1996-2025, Amazon.com, Inc. or its affiliates</p>
-    </footer>
 </body>
 </html>
