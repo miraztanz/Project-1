@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sell on Amazon - Amazon Clone</title>
+    <style>
+        /* Global Styles (Same as Deals) */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #eaeded;
+            color: #131921;
+        }
+
+        /* Header and Nav Styles (Same as Deals) */
+        header {
+            background-color: #131921;
+            color: #fff;
+            padding: 10px 20px;
+        }
+
+        .main-nav {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #ff9900;
+            text-decoration: none;
+            margin-right: 20px;
+        }
+
+        .secondary-nav {
+            background-color: #232f3e;
+            color: #fff;
+            padding: 8px 20px;
+            display: flex;
+            gap: 20px;
+        }
+
+        .secondary-nav a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 14px;
+            padding: 5px 0;
+            border: 1px solid transparent;
+        }
+
+        .secondary-nav a:hover {
+            border: 1px solid #fff;
+            padding: 5px 5px;
+            margin: -5px -5px;
+            border-radius: 2px;
+        }
+
+        /* Sell Specific Styles */
+        .sell-container {
+            padding: 40px 20px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .sell-container h1 {
+            font-size: 36px;
+            color: #007185;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+        
+        .sell-container p.subtitle {
+            text-align: center;
+            margin-bottom: 40px;
+            color: #565959;
+            font-size: 18px;
+        }
+        
+        .start-selling-btn {
+            background-color: #ff9900;
+            color: #131921;
+            padding: 15px 30px;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 4px;
+            font-size: 20px;
+            display: block;
+            width: fit-content;
+            margin: 0 auto 50px auto;
+            transition: background-color 0.3s;
+        }
+
+        .start-selling-btn:hover {
+            background-color: #e68a00;
+        }
+
+        .benefits-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            text-align: center;
+        }
+
+        .benefit-card {
+            background-color: #fff;
+            border: 1px solid #ccc;
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .benefit-card h2 {
+            font-size: 22px;
+            color: #c45500;
+            margin-top: 10px;
+        }
+        
+        .fees-section {
+            margin-top: 50px;
+            padding: 30px;
+            background-color: #f0f0f0;
+            border-radius: 8px;
+            text-align: center;
+        }
+        
+        .fees-section h2 {
+            color: #007185;
+            margin-bottom: 20px;
+        }
+
+        /* Footer Styles (Same as Deals) */
+        footer {
+            background-color: #232f3e;
+            color: #fff;
+            padding: 30px 20px;
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        footer a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+            font-size: 14px;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="main-nav">
+            <a href="#" class="logo">amazon</a>
+        </div>
+        <nav class="secondary-nav">
+            <a href="today_deals.html">Today's Deals</a>
+            <a href="prime_video.html">Amazon Prime Video</a>
+            <a href="registry.html">Registry</a>
+            <a href="gift_cards.html">Gift Cards</a>
+            <a href="customer_service.html">Customer Service</a>
+            <a href="sell.html" style="border: 1px solid #fff;">Sell</a>
+        </nav>
+    </header>
+
+    <main class="sell-container">
+        <h1>Sell on Amazon</h1>
+        <p class="subtitle">Reach millions of customers with your products.</p>
+        
+        <a href="#" class="start-selling-btn">Start Selling Today</a>
+
+        <div class="benefits-grid">
+            <div class="benefit-card">
+                <h2>Reach Globally</h2>
+                <p>Take advantage of our global customer base.</p>
+            </div>
+            <div class="benefit-card">
+                <h2>Easy Logistics</h2>
+                <p>Use Fulfillment by Amazon (FBA) and forget about warehousing, packaging, and shipping stress.</p>
+            </div>
+            <div class="benefit-card">
+                <h2>Seller Tools</h2>
+                <p>Use powerful tools and analytics to help grow your business faster.</p>
+            </div>
+        </div>
+        
+        <div class="fees-section">
+            <h2>Seller Plans</h2>
+            <p>Choose from two plans based on your needs:</p>
+            <p><strong>Individual Plan:</strong> Pay per item sold, no monthly fee.</p>
+            <p><strong>Professional Plan:</strong> Monthly fee + lower referral fees, ideal for high-volume sellers.</p>
+        </div>
+    </main>
+
+    <footer>
+        <p><a href="#">Conditions of Use</a> | <a href="#">Privacy Notice</a> | <a href="#">Help</a></p>
+        <p>© 1996-2025, Amazon.com, Inc. or its affiliates</p>
+    </footer>
+</body>
+</html>

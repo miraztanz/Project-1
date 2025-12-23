@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon Prime Video - Amazon Clone</title>
+    <style>
+        /* Global Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #000;
+            color: #fff;
+        }
+
+        /* Header and Nav Styles */
+        header {
+            background-color: #000;
+            color: #fff;
+            padding: 10px 20px;
+            border-bottom: 3px solid #0f79af;
+        }
+
+        .secondary-nav {
+            background-color: #000;
+            color: #fff;
+            padding: 8px 20px;
+            display: flex;
+            gap: 20px;
+        }
+
+        .secondary-nav a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 14px;
+            padding: 5px 0;
+            border: 1px solid transparent;
+        }
+
+        .secondary-nav a:hover {
+            border: 1px solid #0f79af;
+            padding: 5px 5px;
+            margin: -5px -5px;
+            border-radius: 2px;
+        }
+
+        /* Prime Video Specific Styles */
+        .hero-section {
+            background: url('https://via.placeholder.com/1500x500?text=Prime+Video+Banner') no-repeat center center/cover;
+            height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            margin-bottom: 30px;
+            position: relative;
+        }
+
+        .hero-content {
+            background-color: rgba(0, 0, 0, 0.6);
+            padding: 30px;
+            border-radius: 8px;
+        }
+
+        .hero-content h1 {
+            font-size: 36px;
+            color: #fff;
+            margin-bottom: 10px;
+        }
+
+        .hero-content p {
+            font-size: 18px;
+            color: #ccc;
+            margin-bottom: 20px;
+        }
+
+        .subscribe-btn {
+            background-color: #0f79af;
+            color: #fff;
+            padding: 15px 30px;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 4px;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+
+        .subscribe-btn:hover {
+            background-color: #1a8cc6;
+        }
+
+        .content-section {
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .content-section h2 {
+            color: #fff;
+            margin-bottom: 20px;
+            border-left: 5px solid #0f79af;
+            padding-left: 10px;
+        }
+
+        .movie-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+        }
+
+        .movie-card {
+            background-color: #1a1a1a;
+            border-radius: 5px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+            transition: transform 0.2s;
+        }
+
+        .movie-card:hover {
+            transform: scale(1.05);
+        }
+
+        .movie-card img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .movie-card p {
+            padding: 10px;
+            text-align: center;
+            font-size: 14px;
+        }
+
+        /* Footer Styles */
+        footer {
+            background-color: #000;
+            color: #aaa;
+            padding: 30px 20px;
+            text-align: center;
+            margin-top: 50px;
+            border-top: 1px solid #333;
+        }
+
+        footer a {
+            color: #aaa;
+            text-decoration: none;
+            margin: 0 10px;
+            font-size: 14px;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="secondary-nav">
+            <a href="#">Prime</a>
+            <a href="index.html">Home</a>
+            <a href="#">TV Shows</a>
+            <a href="#">Movies</a>
+            <a href="#">Kids</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero-section">
+            <div class="hero-content">
+                <h1>Welcome to Amazon Prime Video</h1>
+                <p>Watch thousands of movies, TV shows, and Amazon Originals</p>
+                <a href="#" class="subscribe-btn">Start Free Trial</a>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <h2>Popular Movies & TV Shows</h2>
+            <div class="movie-grid">
+                <div class="movie-card">
+                    <img src="images/movie1.jpg" alt="Movie 1">
+                    <p>Thriller - Mystery</p>
+                </div>
+                <div class="movie-card">
+                    <img src="images/movie2.jpg" alt="TV Show 2">
+                    <p>Comedy - Romance</p>
+                </div>
+                <div class="movie-card">
+                    <img src="images/movie3.jpg" alt="Original 3">
+                    <p>Action - Adventure</p>
+                </div>
+                <div class="movie-card">
+                    <img src="images/movie4.jpg" alt="Kids 4">
+                    <p>Animation - Educational</p>
+                </div>
+                <div class="movie-card">
+                    <img src="images/movie5.jpg" alt="Show 5">
+                    <p>Drama - Crime</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p><a href="#">Terms & Conditions</a> | <a href="#">Privacy Policy</a> | <a href="#">Help</a></p>
+        <p>© 1996-2025, Amazon.com, Inc. or its affiliates</p>
+    </footer>
+</body>
+</html>

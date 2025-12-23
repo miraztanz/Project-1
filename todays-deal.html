@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Today's Deals</title>
+    <style>
+        /* Global Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #eaeded;
+            color: #131921;
+        }
+
+        /* Header and Nav Styles (Replicated for Amazon look) */
+        header {
+            background-color: #131921;
+            color: #fff;
+            padding: 10px 20px;
+        }
+
+        .main-nav {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #ff9900;
+            text-decoration: none;
+            margin-right: 20px;
+        }
+
+        .secondary-nav {
+            background-color: #232f3e;
+            color: #fff;
+            padding: 8px 20px;
+            display: flex;
+            gap: 20px;
+        }
+
+        .secondary-nav a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 14px;
+            padding: 5px 0;
+            border: 1px solid transparent;
+        }
+
+        .secondary-nav a:hover {
+            border: 1px solid #fff;
+            padding: 5px 5px;
+            margin: -5px -5px; /* Adjusting margin for border effect */
+            border-radius: 2px;
+        }
+
+        /* Today's Deals Specific Styles */
+        .deals-container {
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .deals-container h1 {
+            color: #c45500;
+            border-bottom: 2px solid #ccc;
+            padding-bottom: 10px;
+            margin-bottom: 30px;
+        }
+
+        .deal-item {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            padding: 15px;
+            margin-bottom: 15px;
+            border-radius: 5px;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .deal-item img {
+            max-width: 150px;
+            height: auto;
+            border-radius: 3px;
+        }
+
+        .deal-info h2 {
+            color: #007185;
+            margin-top: 0;
+            font-size: 18px;
+        }
+
+        .deal-info .price {
+            font-size: 20px;
+            color: #b12704;
+            font-weight: bold;
+        }
+
+        .deal-info .original-price {
+            text-decoration: line-through;
+            color: #565959;
+            font-size: 14px;
+            margin-left: 10px;
+        }
+
+        .deal-info .discount {
+            color: #007600;
+            font-weight: bold;
+            margin-top: 5px;
+            display: block;
+        }
+
+        /* Footer Styles */
+        footer {
+            background-color: #232f3e;
+            color: #fff;
+            padding: 30px 20px;
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        footer a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+            font-size: 14px;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="main-nav">
+            <a href="#" class="logo">amazon</a>
+            </div>
+        <nav class="secondary-nav">
+            <a href="todays-deals.html" style="border: 1px solid #fff;">Today's Deals</a>
+            <a href="prime-video.html">Amazon Prime Video</a>
+            <a href="registry.html">Registry</a>
+            <a href="gift-card.html">Gift Cards</a>
+            <a href="customer-service.html">Customer Service</a>
+            <a href="sell.html">Sell</a>
+        </nav>
+    </header>
+
+    <main class="deals-container">
+        <h1>Today's bast deal and offers 💥</h1>
+
+        <div class="deal-item">
+            <img src="images/box5-4.jpg" alt="Electronices deal">
+            <div class="deal-info">
+                <h2>Huge discounts on smartphones and gadgets</h2>
+                <p>Deadline: Only 5 hours left!</p>
+                <span class="price">$ 15</span>
+                <span class="original-price">$ 18</span>
+                <span class="discount">30% discount</span>
+                <p>Don't miss the best deals on new tech products</p>
+            </div>
+        </div>
+
+        <div class="deal-item">
+            <img src="images/home.jpg" alt="home deals">
+            <div class="deal-info">
+                <h2>Best offers on household items</h2>
+                <p>Deadlines: 4 hours left</p>
+                <span class="price">$5</span>
+                <span class="original-price">$ 5</span>
+                <span class="discount">৪৪% discount</span>
+                <p>Everything you need to decorate your kitchen and home</p>
+            </div>
+        </div>
+
+        <div class="deal-item">
+            <img src="images/box5-1.jpg" alt="Fashion deals">
+            <div class="deal-info">
+                <h2>Clothing and fashion accessories</h2>
+                <p>Deadlines: 12 hours left</p>
+                <span class="price">$ 10</span>
+                <span class="original-price">$ 25</span>
+                <span class="discount">60% discount</span>
+                <p>Dress yourself up in the latest fashion trends.</p>
+            </div>
+        </div>
+        
+        <div style="text-align: center; margin-top: 40px;">
+            <a href="#" style="background-color: #ff9900; color: #131921; padding: 10px 20px; text-decoration: none; border-radius: 4px; font-weight: bold;">See more deals</a>
+        </div>
+    </main>
+
+    <footer>
+        <p><a href="#">Conditions of Use</a> | <a href="#">Privacy Notice</a> | <a href="#">Help</a></p>
+        <p>© 1996-2025, Amazon.com, Inc. or its affiliates</p>
+    </footer>
+</body>
+</html>

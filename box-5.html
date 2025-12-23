@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop Gifts by Category</title>
+    <style>
+        /* Global Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #eaeded;
+            color: #131921;
+        }
+
+        /* Amazon-like Header/Nav */
+        header {
+            background-color: #131921;
+            color: #fff;
+            padding: 10px 20px;
+            text-align: center;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #ff9900;
+            text-decoration: none;
+        }
+
+        /* Page Content */
+        .container {
+            max-width: 1100px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: #007185;
+            border-bottom: 2px solid #ccc;
+            padding-bottom: 15px;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        .category-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+            text-align: center;
+        }
+
+        .category-card {
+            border: 1px solid #ddd;
+            padding: 20px;
+            border-radius: 5px;
+            background-color: #f7f7f7;
+        }
+
+        .category-card img {
+            width: 80%;
+            height: auto;
+            border-radius: 3px;
+            margin-bottom: 15px;
+        }
+
+        .category-card h2 {
+            color: #c45500;
+            margin-top: 0;
+            font-size: 22px;
+        }
+
+        .discover-link a {
+            color: #007185;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .discover-link a:hover {
+            text-decoration: underline;
+        }
+        
+        /* Footer Styles */
+        footer {
+            background-color: #232f3e;
+            color: #fff;
+            padding: 30px 20px;
+            text-align: center;
+            margin-top: 195px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">amazon - Category Gifts</a>
+    </header>
+
+    <div class="container">
+        <h1>Shop Gifts by Category</h1>
+        <p style="text-align: center; margin-bottom: 40px;">From technology to home decor, find the best gifts in every category.</p>
+
+        <div class="category-grid">
+            <div class="category-card">
+                <img src="images/electronics.jpg" alt="Electronics">
+                <h2>Electronics</h2>
+                <p>Smartphones, Television, and gadgets.</p>
+            </div>
+            <div class="category-card">
+                <img src="images/home.jpg" alt="Home & Kitchen">
+                <h2>Home & Kitchen</h2>
+                <p>Modern kitchen appliances.</p>
+            </div>
+            <div class="category-card">
+                <img src="images/sports.jpg" alt="Sports">
+                <h2>Sports & Outdoors</h2>
+                <p>Fitness and camping equipment.</p>
+            </div>
+        </div>
+        
+        <div class="discover-link" style="text-align: center; margin-top: 30px;">
+            <a href="gifts_by_category.html?holiday=true">Discover more for Holiday</a>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 1996-2025, Amazon.com</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon Clone - Project</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+gbL0W2tWd/w==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+</head>
+<body>
+
+    <header>
+        <div class="navbar">
+            <div class="nav-logo border">
+                <div class="logo"></div>
+            </div>
+
+            <div class="nav-address border">
+                <p class="add-first">Deliver to</p>
+                <div class="add-icon">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <p class="add-second">Bangladesh</p>
+                </div>
+            </div>
+
+            <div class="nav-search">
+                <select class="search-select">
+                    <option>All</option>
+                    <option>All Departments</option>
+                    <option>Arts and craft</option>
+                    <option>Automotive</option>
+                    <option>Baby</option>
+                    <option>Beauty & Personal care</option>
+                    <option>Books</option>
+                    <option>Boy's Fashion</option>
+                    <option>Girl's Fashion</option>
+                    <option>Computers</option>
+                    <option>Deals</option>
+                    <option>Digital Music</option>
+                    <option>Prime Video</option>
+                    <option>Toys and games</option>
+                    <option>Women's Fashion</option>
+                </select>
+                <input placeholder="Search Amazon" class="search-input">
+                <div class="search-icon">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+            </div>
+
+            <div class="nav-language border">
+                <i class="fa-solid fa-caret-down"></i>
+                <div class="lang-flag"></div> <p>EN</p>
+                
+            </div>
+
+            <div class="nav-signin border">
+                <a href="sign-in.html">
+                <p><span>Hello, sign in</span></p>
+                <p class="nav-second">Account & Lists <i class="fa-solid fa-caret-down"></i></p>
+                </a>
+            </div>
+
+            <div class="nav-returns border">
+                <a href="returns-order.html">
+                <p><span>Returns</span></p>
+                <p class="nav-second">& Orders</p>
+                </a>
+            </div>
+
+            <div class="nav-cart border">
+                <a href="cart.html">
+                <i class="fa-solid fa-cart-shopping"></i>
+                 Cart</a>
+            </div>
+        </div>
+
+        <div class="panel">
+            <div class="panel-all border">
+                <i class="fa-solid fa-bars"></i>
+                All
+            </div>
+            <div class="panel-ops">
+                <a href="todays-deal.html" class="border">Todays Deals</a>
+                <a href="prime-video.html" class="border">Amazon Prime Video</a>
+                <a href="registry.html" class="border">Registry</a>
+                <a href="gift-card.html" class="border">Gift Cards</a>
+                <a href="customer-service.html" class="border">Customer Service</a>
+                <a href="sell.html" class="border">Sell</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+       <div class="hero-section">
+    <div class="hero-slider">
+        <div class="hero-slide ">
+            <p>Holiday deals. Save up to 35% on beauty</p>
+            <div class="hero-image-placeholder slide-1"></div>
+        </div>
+
+        <div class="hero-slide">
+            <p class="hero-msg">Explore deals on Electronics, Gadgets, and more!</p>
+            <div class="hero-image-placeholder slide-2"></div>
+        </div>
+
+        <div class="hero-slide">
+            <p>Discover new arrivals in Home & Kitchen.</p>
+            <div class="hero-image-placeholder slide-3"></div>
+        </div>
+
+        
+    </div>
+    
+    <div class="slider-arrow prev" onclick="changeSlide(-1)">&#10094;</div>
+    <div class="slider-arrow next" onclick="changeSlide(1)">&#10095;</div>
+
+    </div>
+
+        <div class="shop-section">
+
+            <div class="card-row">
+             <a href="box-1.html">
+                <div class="box">
+                    <h2>Shop gifts by price</h2>
+                    <div class="box-content-grid">
+                        <div class="grid-item">
+                            <div class="item-img-placeholder-1"></div>
+                            <p>Under $10</p>
+                        </div>
+                        <div class="grid-item">
+                            <div class="item-img-placeholder-2"></div>
+                            <p>Under $25</p>
+                        </div>
+                        <div class="grid-item">
+                            <div class="item-img-placeholder-3"></div>
+                            <p>Under $50</p>
+                        </div>
+                        <div class="grid-item">
+                            <div class="item-img-placeholder-4"></div>
+                            <p>Deals</p>
+                        </div>
+                    </div>
+                    <a href="box-1.html">Discover more for Holiday</a>
+                </div>
+              </a>
+
+              <a href="box-2.html">
+                <div class="box">
+                    <h2>Shop gifts by recipient</h2>
+                    <div class="box-content-grid">
+                        <div class="grid-item">
+                            <div class="item-img-placeholder-5"></div>
+                            <p>For him</p>
+                        </div>
+                        <div class="grid-item">
+                            <div class="item-img-placeholder-6"></div>
+                            <p>For her</p>
+                        </div>
+                        <div class="grid-item">
+                            <div class="item-img-placeholder-7"></div>
+                            <p>For kids</p>
+                        </div>
+                        <div class="grid-item">
+                            <div class="item-img-placeholder-8"></div>
+                            <p>For teens</p>
+                        </div>
+                    </div>
+                    <a href="box-2.html">Shop all gifts</a>
+                </div> </a>
+                
+                <a href="box-3.html">
+                <div class="box">
+                    <h2>Shop for your home essentials</h2>
+                    <div class="box-content-grid">
+                        <div class="grid-item">
+                            <div class="item-img-placeholder-9"></div>
+                            <p>Cleaning Tools</p>
+                        </div>
+                        <div class="grid-item">
+                            <div class="item-img-placeholder-10"></div>
+                            <p>Home Storage</p>
+                        </div>
+                        <div class="grid-item">
+                            <div class="item-img-placeholder-11"></div>
+                            <p>Home Decor</p>
+                        </div>
+                        <div class="grid-item">
+                            <div class="item-img-placeholder-12"></div>
+                            <p>Bedding</p>
+                        </div>
+                    </div>
+                    <a href="box-3.html">Discover more in Home</a>
+                </div> </a>
+
+                <div class="box">
+                    <div class="single-banner-placeholder">
+                        <p class="banner-title">Holiday deals</p>
+                        <p class="banner-subtitle">Save up to 35% on beauty</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card-row">
+                    <div class="box large-banner">
+                    <h2>Get your game on</h2>
+                    <div class="large-banner-placeholder"></div>
+                    <a href="box-4.html">Shop Gaming</a>
+                </div>
+
+                <a href="box-5.html">
+                <div class="box">
+                    <h2>Shop gifts by category</h2>
+                    <div class="box-content-grid">
+                        <div class="grid-item">
+                            <div class="item-img-placeholder-13"></div>
+                            <p>Toys</p>
+                        </div>
+                        <div class="grid-item">
+                            <div class="item-img-placeholder-14"></div>
+                            <p>Home & Kitchen</p>
+                        </div>
+                        <div class="grid-item">
+                            <div class="item-img-placeholder-15"></div>
+                            <p>Electronics</p>
+                        </div>
+                        <div class="grid-item">
+                            <div class="item-img-placeholder-16"></div>
+                            <p>Sports & outdoors</p>
+                        </div>
+                    </div>
+                    <a href="box-5.html">Discover more for Holiday</a>
+                </div> </a>
+
+                <a href="box-6.html">
+                <div class="box">
+                    <h2>Save more on deals</h2>
+                    <div class="box-content-grid">
+                        <div class="grid-item">
+                            <div class="item-img-placeholder-17"></div>
+                            <p>Fashion</p>
+                        </div>
+                        <div class="grid-item">
+                            <div class="item-img-placeholder-18"></div>
+                            <p>Toys</p>
+                        </div>
+                        <div class="grid-item">
+                            <div class="item-img-placeholder-19"></div>
+                            <p>Home & Kitchen</p>
+                        </div>
+                        <div class="grid-item">
+                            <div class="item-img-placeholder-20"></div>
+                            <p>Electronics</p>
+                        </div>
+                    </div>
+                    <a href="box-6.html">Discover more Holiday deals</a>
+                </div> </a>
+
+                <div class="box">
+                    <h2>Popular products in wireless Internationally</h2>
+                    <div class="international-products-placeholder"></div>
+                    </div>
+            </div>
+
+            
+            <div class="card-row">
+                <div class="box large-banner">
+                    <h2>Shop holiday gift guides</h2>
+                    <div class="large-banner-placeholder-2"></div>
+                    <a href="box-7.html">See more</a>
+                </div>
+
+                <a href="box-8.html">
+                <div class="box">
+                    <h2>New home arrivals under $50</h2>
+                    <div class="box-content-grid">
+                        <div class="grid-item">
+                            <div class="item-img-placeholder-21"></div>
+                            <p>Kitchen & Dining</p>
+                        </div>
+                        <div class="grid-item">
+                            <div class="item-img-placeholder-22"></div>
+                            <p>Home Improvement</p>
+                        </div>
+                        <div class="grid-item">
+                            <div class="item-img-placeholder-23"></div>
+                            <p>Décor</p>
+                        </div>
+                        <div class="grid-item">
+                            <div class="item-img-placeholder-24"></div>
+                            <p>Bedding & Bath</p>
+                        </div>
+                    </div>
+                    <a href="box-8.html">Shop the latest from Home</a>
+                </div> </a>
+
+                <a href="box-9.html">
+                <div class="box">
+                    <h2>Shop Fashion for less</h2>
+                    <div class="box-content-grid">
+                        <div class="grid-item">
+                            <div class="item-img-placeholder-25"></div>
+                            <p>Jeans under $50</p>
+                        </div>
+                        <div class="grid-item">
+                            <div class="item-img-placeholder-26"></div>
+                            <p>Tops under $25</p>
+                        </div>
+                        <div class="grid-item">
+                            <div class="item-img-placeholder-27"></div>
+                            <p>Dresses under $30</p>
+                        </div>
+                        <div class="grid-item">
+                            <div class="item-img-placeholder-28"></div>
+                            <p>Shoes under $50</p>
+                        </div>
+                    </div>
+                    <a href="box-9.html">See all deals</a>
+                </div> </a>
+
+                <div class="box wide-product-strip">
+                    <h2>Popular products in Internationally</h2>
+                    <div class="wide-strip-content">
+                        <div class="strip-item-placeholder"></div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="signin-recommendation">
+            <p>See personalized recommendations</p>
+           <a href="sign-in.html"> <button class="signin-button">Sign in</button> </a>
+            <p class="new-customer">New customer? <a href="#">Start here.</a></p>
+        </div>
+
+    </main>
+
+    <footer>
+        <div class="footer-back-to-top">
+            Back to top
+        </div>
+
+        <div class="footer-links">
+            <div class="footer-col">
+                <h3>Get to Know Us</h3>
+                <ul>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">About Amazon</a></li>
+                    <li><a href="#">Investor Relations</a></li>
+                    <li><a href="#">Amazon Devices</a></li>
+                    <li><a href="#">Amazon Science</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Make Money with Us</h3>
+                <ul>
+                    <li><a href="#">Sell products on Amazon</a></li>
+                    <li><a href="#">Sell on Amazon Business</a></li>
+                    <li><a href="#">Sell apps on Amazon</a></li>
+                    <li><a href="#">Become an Affiliate</a></li>
+                    <li><a href="#">Advertise Your Products</a></li>
+                    <li><a href="#">Self-Publish with Us</a></li>
+                    <li><a href="#">Host an Amazon Hub</a></li>
+                    <li><a href="#">› See More Make Money with Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Amazon Payment Products</h3>
+                <ul>
+                    <li><a href="#">Amazon Business Card</a></li>
+                    <li><a href="#">Shop with Points</a></li>
+                    <li><a href="#">Reload Your Balance</a></li>
+                    <li><a href="#">Amazon Currency Converter</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Let Us Help You</h3>
+                <ul>
+                    <li><a href="#">Amazon and COVID-19</a></li>
+                    <li><a href="#">Your Account</a></li>
+                    <li><a href="#">Your Orders</a></li>
+                    <li><a href="#">Shipping Rates & Policies</a></li>
+                    <li><a href="#">Returns & Replacements</a></li>
+                    <li><a href="#">Manage Your Content and Devices</a></li>
+                    <li><a href="#">Help</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom-nav">
+            <div class="bottom-options">
+                <div class="option-box">
+                    <i class="fa-solid fa-globe"></i> English <i class="fa-solid fa-sort"></i>
+                </div>
+                <div class="option-box">
+                    $ USD - U.S. Dollar
+                </div>
+                <div class="option-box">
+                    <div class="us-flag"></div> United States
+                </div>
+            </div>
+        </div>
+
+    </footer>
+<script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+
+        function changeSlide(n) {
+          showSlides(slideIndex += n);
+        }
+
+        function showSlides(n) {
+          let i;
+          let slides = document.getElementsByClassName("hero-slide");
+          
+          // যদি শেষ স্লাইড থেকে সামনে যাওয়া হয়, তাহলে প্রথম স্লাইডে ফিরে যাও
+          if (n > slides.length) {
+            slideIndex = 1;
+          }
+          // যদি প্রথম স্লাইড থেকে পিছনে যাওয়া হয়, তাহলে শেষ স্লাইডে যাও
+          if (n < 1) {
+            slideIndex = slides.length;
+          }
+          
+          // সব স্লাইড লুকিয়ে দাও
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+          }
+          
+          // বর্তমান স্লাইডটি দেখাও
+          slides[slideIndex - 1].style.display = "block";  
+        }
+
+        // Automatic slider (optional, but good for Amazon look)
+        let autoSlideIndex = 0;
+        carousel();
+
+        function carousel() {
+          let i;
+          let slides = document.getElementsByClassName("hero-slide");
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+          }
+          autoSlideIndex++;
+          if (autoSlideIndex > slides.length) {autoSlideIndex = 1}    
+          slides[autoSlideIndex - 1].style.display = "block";  
+          setTimeout(carousel, 4000); // Change image every 4 seconds (4000ms)
+        }
+
+    </script>
+    <script>
+        document.querySelector('.footer-back-to-top').addEventListener('click', function() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth' // মসৃণ স্ক্রলিং এর জন্য
+            });
+        });
+    </script>
+
+  
+</body>
+</html>

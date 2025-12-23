@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registry - Amazon Clone</title>
+    <style>
+        /* Global Styles (Same as Deals) */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #eaeded;
+            color: #131921;
+        }
+
+        /* Header and Nav Styles (Same as Deals) */
+        header {
+            background-color: #131921;
+            color: #fff;
+            padding: 10px 20px;
+        }
+
+        .main-nav {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #ff9900;
+            text-decoration: none;
+            margin-right: 20px;
+        }
+
+        .secondary-nav {
+            background-color: #232f3e;
+            color: #fff;
+            padding: 8px 20px;
+            display: flex;
+            gap: 20px;
+        }
+
+        .secondary-nav a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 14px;
+            padding: 5px 0;
+            border: 1px solid transparent;
+        }
+
+        .secondary-nav a:hover {
+            border: 1px solid #fff;
+            padding: 5px 5px;
+            margin: -5px -5px;
+            border-radius: 2px;
+        }
+
+        /* Registry Specific Styles */
+        .registry-container {
+            padding: 40px 20px;
+            max-width: 1000px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .registry-container h1 {
+            font-size: 32px;
+            color: #007185;
+            margin-bottom: 30px;
+        }
+
+        .registry-options {
+            display: flex;
+            justify-content: space-around;
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+
+        .option-card {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 45%;
+            text-align: left;
+        }
+
+        .option-card h2 {
+            color: #c45500;
+            font-size: 24px;
+            margin-top: 0;
+        }
+
+        .registry-btn {
+            background-color: #ff9900;
+            color: #131921;
+            padding: 10px 20px;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 4px;
+            display: inline-block;
+            margin-top: 15px;
+            transition: background-color 0.3s;
+        }
+
+        .registry-btn:hover {
+            background-color: #e68a00;
+        }
+
+        .find-registry {
+            background-color: #f7f7f7;
+            padding: 30px;
+            border-radius: 8px;
+            margin-top: 30px;
+        }
+
+        .find-registry input[type="text"] {
+            padding: 10px;
+            width: 60%;
+            margin-right: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .find-registry button {
+            background-color: #007185;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+
+        .find-registry button:hover {
+            background-color: #005a66;
+        }
+
+        /* Footer Styles (Same as Deals) */
+        footer {
+            background-color: #232f3e;
+            color: #fff;
+            padding: 30px 20px;
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        footer a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+            font-size: 14px;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="main-nav">
+            <a href="#" class="logo">amazon</a>
+        </div>
+        <nav class="secondary-nav">
+            <a href="today_deals.html">Today's Deals</a>
+            <a href="prime_video.html">Amazon Prime Video</a>
+            <a href="registry.html" style="border: 1px solid #fff;">Registry</a>
+            <a href="gift_cards.html">Gift Cards</a>
+            <a href="customer_service.html">Customer Service</a>
+            <a href="sell.html">Sell</a>
+        </nav>
+    </header>
+
+    <main class="registry-container">
+        <h1>Gift Registry & Wish List</h1>
+        <p>Create a gift list for your special event and share it with others.</p>
+
+        <div class="registry-options">
+            <div class="option-card">
+                <h2>Wedding Registry</h2>
+                <p>Create a list of gifts you want from guests for your wedding.</p>
+                <ul>
+                    <li>Easily create and manage your list</li>
+                    <li>Special discounts and offers</li>
+                    <li>Thank-you card tracker</li>
+                </ul>
+                <a href="#" class="registry-btn">Create a Wedding Registry</a>
+            </div>
+            
+            <div class="option-card">
+                <h2>Baby Registry</h2>
+                <p>Add all the essentials needed for new parents.</p>
+                <ul>
+                    <li>Welcome Box</li>
+                    <li>Up to 15% completion discount</li>
+                    <li>Easy returns and exchanges</li>
+                </ul>
+                <a href="#" class="registry-btn">Create a Baby Registry</a>
+            </div>
+        </div>
+
+        <div class="find-registry">
+            <h2>Find Someone's Registry</h2>
+            <p>Find your friend or family member’s registry and send a gift.</p>
+            <form>
+                <input type="text" placeholder="Search by name or email" required>
+                <button type="submit">Search</button>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <p><a href="#">Conditions of Use</a> | <a href="#">Privacy Notice</a> | <a href="#">Help</a></p>
+        <p>© 1996-2025, Amazon.com, Inc. or its affiliates</p>
+    </footer>
+</body>
+</html>

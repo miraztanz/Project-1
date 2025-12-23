@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Shopping Cart - Amazon Clone</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: #eaeded;
+    }
+
+    /* Header */
+    .header {
+      background: #131921;
+      color: white;
+      padding: 10px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    .logo span {
+      color: #ff9900;
+    }
+
+    .menu a {
+      color: white;
+      margin-left: 15px;
+      text-decoration: none;
+      font-size: 14px;
+    }
+
+    /* Main Cart Container */
+    .container {
+      max-width: 1100px;
+      margin: 20px auto;
+      display: flex;
+      gap: 20px;
+    }
+
+    /* Left Side - Cart Items */
+    .cart-items {
+      flex: 3;
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+    }
+
+    .cart-title {
+      font-size: 26px;
+      margin-bottom: 15px;
+      border-bottom: 1px solid #ddd;
+      padding-bottom: 10px;
+    }
+
+    .cart-item {
+      display: flex;
+      border-bottom: 1px solid #ddd;
+      padding: 15px 0;
+      gap: 15px;
+      align-items: center;
+    }
+
+    .item-img {
+      width: 120px;
+      height: 120px;
+      border-radius: 6px;
+      background-image: url(images/headphone.jpg);
+      background-size: cover;
+    }
+    .item-img-2{
+      width: 120px;
+      height: 120px;
+      border-radius: 6px;
+      background-image: url(images/mouse.jpg);
+      background-size: cover;
+    }
+
+    .item-details {
+      flex: 1;
+    }
+
+    .item-details h3 {
+      font-size: 18px;
+      margin-bottom: 5px;
+    }
+
+    .item-details p {
+      font-size: 14px;
+      color: #555;
+      margin-bottom: 5px;
+    }
+
+    .item-actions {
+      margin-top: 8px;
+      font-size: 13px;
+    }
+
+    .item-actions a {
+      color: #0066c0;
+      text-decoration: none;
+      margin-right: 10px;
+    }
+
+    .qty select {
+      padding: 5px;
+      margin-top: 5px;
+    }
+
+    .price {
+      font-size: 18px;
+      font-weight: bold;
+      white-space: nowrap;
+    }
+
+    /* Right Side - Summary */
+    .summary {
+      flex: 1;
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+      height: fit-content;
+    }
+
+    .summary p {
+      font-size: 16px;
+      margin-bottom: 15px;
+    }
+
+    .btn-checkout {
+      width: 100%;
+      padding: 10px;
+      background: #ffd814;
+      border: 1px solid #fcd200;
+      border-radius: 4px;
+      font-size: 15px;
+      cursor: pointer;
+    }
+
+    .btn-checkout:hover {
+      background: #f7ca00;
+    }
+
+    /* Footer */
+    .footer {
+      text-align: center;
+      margin: 40px 0 20px;
+      font-size: 13px;
+      color: #555;
+    }
+
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <div class="header">
+    <div class="logo">amazon<span>.</span></div>
+    <div class="menu">
+      <a href="index.html">Home</a>
+      <a href="returns-order.html">Returns & Orders</a>
+      <a href="cart.html">Cart</a>
+    </div>
+  </div>
+
+  <!-- Main Cart Section -->
+  <div class="container">
+
+    <!-- Cart Items (Left) -->
+    <div class="cart-items">
+      <div class="cart-title">Shopping Cart</div>
+
+      <!-- Item 1 -->
+      <div class="cart-item">
+        <div class="item-img"></div>
+
+        <div class="item-details">
+          <h3>Bluetooth Headphones</h3>
+          <p>In stock</p>
+
+          <div class="qty">
+            Qty:
+            <select>
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+            </select>
+          </div>
+
+          <div class="item-actions">
+            <a href="#">Delete</a> |
+            <a href="#">Save for later</a>
+          </div>
+        </div>
+
+        <div class="price">$18</div>
+      </div>
+
+      <!-- Item 2 -->
+      <div class="cart-item">
+        <div class="item-img-2"></div>
+
+        <div class="item-details">
+          <h3>Gaming Mouse</h3>
+          <p>Only 2 left in stock</p>
+
+          <div class="qty">
+            Qty:
+            <select>
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+            </select>
+          </div>
+
+          <div class="item-actions">
+            <a href="#">Delete</a> |
+            <a href="#">Save for later</a>
+          </div>
+        </div>
+
+        <div class="price">$7</div>
+      </div>
+
+    </div>
+
+    <!-- Summary (Right) -->
+    <div class="summary">
+      <p>Subtotal (2 items): <strong>$25</strong></p>
+      <button class="btn-checkout">Proceed to Checkout</button>
+    </div>
+
+  </div>
+
+  <div class="footer">
+    © 2025, Amazon.Com
+  </div>
+
+</body>
+</html>

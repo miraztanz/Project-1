@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gift Cards - Amazon Clone</title>
+    <style>
+        /* Global Styles (Same as Deals) */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #eaeded;
+            color: #131921;
+        }
+
+        /* Header and Nav Styles (Same as Deals) */
+        header {
+            background-color: #131921;
+            color: #fff;
+            padding: 10px 20px;
+        }
+
+        .main-nav {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #ff9900;
+            text-decoration: none;
+            margin-right: 20px;
+        }
+
+        .secondary-nav {
+            background-color: #232f3e;
+            color: #fff;
+            padding: 8px 20px;
+            display: flex;
+            gap: 20px;
+        }
+
+        .secondary-nav a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 14px;
+            padding: 5px 0;
+            border: 1px solid transparent;
+        }
+
+        .secondary-nav a:hover {
+            border: 1px solid #fff;
+            padding: 5px 5px;
+            margin: -5px -5px;
+            border-radius: 2px;
+        }
+
+        /* Gift Cards Specific Styles */
+        .gift-card-container {
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .gift-card-container h1 {
+            color: #c45500;
+            border-bottom: 2px solid #ccc;
+            padding-bottom: 10px;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        .card-types {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+        }
+
+        .card-item {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .card-item img {
+            width: 80%;
+            height: auto;
+            border-radius: 5px;
+            margin-bottom: 15px;
+        }
+
+        .card-item h2 {
+            color: #007185;
+            font-size: 22px;
+            margin-top: 0;
+        }
+
+        .card-item p {
+            color: #565959;
+            font-size: 14px;
+            margin-bottom: 20px;
+        }
+
+        .buy-btn {
+            background-color: #ff9900;
+            color: #131921;
+            padding: 10px 20px;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 4px;
+            display: inline-block;
+            transition: background-color 0.3s;
+        }
+
+        .buy-btn:hover {
+            background-color: #e68a00;
+        }
+        
+        /* Balance Check Section */
+        .balance-check {
+            background-color: #f7f7f7;
+            padding: 30px;
+            border-radius: 8px;
+            margin-top: 40px;
+            text-align: center;
+        }
+
+        .balance-check input[type="text"] {
+            padding: 10px;
+            width: 50%;
+            margin-right: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        
+        .balance-check button {
+            background-color: #007185;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+        
+        .balance-check button:hover {
+            background-color: #005a66;
+        }
+
+        /* Footer Styles (Same as Deals) */
+        footer {
+            background-color: #232f3e;
+            color: #fff;
+            padding: 30px 20px;
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        footer a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+            font-size: 14px;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="main-nav">
+            <a href="#" class="logo">amazon</a>
+        </div>
+        <nav class="secondary-nav">
+            <a href="today_deals.html">Today's Deals</a>
+            <a href="prime_video.html">Amazon Prime Video</a>
+            <a href="registry.html">Registry</a>
+            <a href="gift_cards.html" style="border: 1px solid #fff;">Gift Cards</a>
+            <a href="customer_service.html">Customer Service</a>
+            <a href="sell.html">Sell</a>
+        </nav>
+    </header>
+
+    <main class="gift-card-container">
+        <h1>Amazon Gift Cards</h1>
+        <p style="text-align: center; font-size: 16px; margin-bottom: 40px;">The perfect gift! Use it for any occasion.</p>
+
+        <div class="card-types">
+            <div class="card-item">
+                <img src="images/e-gift-card.jpg" alt="E-Gift Card">
+                <h2>E-Gift Card</h2>
+                <p>Send instantly via email. Eco-friendly!</p>
+                <a href="#" class="buy-btn">Buy</a>
+            </div>
+            <div class="card-item">
+                <img src="images/physical-gift-card.jpg" alt="Physical Card">
+                <h2>Physical Gift Card</h2>
+                <p>Beautiful design, delivered via postal mail.</p>
+                <a href="#" class="buy-btn">Buy</a>
+            </div>
+            <div class="card-item">
+                <img src="images/corporate-gift-card.jpg" alt="Corporate Card">
+                <h2>Corporate Gift Card</h2>
+                <p>Great for business or employee bulk orders.</p>
+                <a href="#" class="buy-btn">Learn More</a>
+            </div>
+        </div>
+
+        <div class="balance-check">
+            <h2>Check Gift Card Balance</h2>
+            <form>
+                <input type="text" placeholder="Enter gift card code" required>
+                <button type="submit">Check Balance</button>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <p><a href="#">Conditions of Use</a> | <a href="#">Privacy Notice</a> | <a href="#">Help</a></p>
+        <p>© 1996-2025, Amazon.com, Inc. or its affiliates</p>
+    </footer>
+</body>
+</html>

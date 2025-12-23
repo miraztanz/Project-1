@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Essentials</title>
+    <style>
+        /* Global Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #eaeded;
+            color: #131921;
+        }
+
+        /* Amazon-like Header/Nav */
+        header {
+            background-color: #131921;
+            color: #fff;
+            padding: 10px 20px;
+            text-align: center;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #ff9900;
+            text-decoration: none;
+        }
+
+        /* Page Content */
+        .container {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: #007185;
+            border-bottom: 2px solid #ccc;
+            padding-bottom: 15px;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        .category-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .category-item {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+            background-color: #f7f7f7;
+            position: relative;
+        }
+
+        .category-item img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            display: block;
+        }
+
+        .category-info {
+            padding: 15px;
+        }
+
+        .category-info h2 {
+            color: #c45500;
+            font-size: 20px;
+            margin-top: 0;
+        }
+
+        .discover-link {
+            position: absolute;
+            bottom: 10px;
+            right: 15px;
+        }
+        
+        .discover-link a {
+            color: #007185;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        
+        .discover-link a:hover {
+            text-decoration: underline;
+        }
+
+        /* Footer Styles */
+        footer {
+            background-color: #232f3e;
+            color: #fff;
+            padding: 30px 20px;
+            text-align: center;
+            margin-top: 223px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">amazon - Home Essentials</a>
+    </header>
+
+    <div class="container">
+        <h1>Essential Items for Your Home</h1>
+        <p style="text-align: center; margin-bottom: 40px;">From kitchen to bedroom, find the best deals for everything!</p>
+
+        <div class="category-grid">
+            <div class="category-item">
+                <img src="images/kitchen.jpg" alt="Kitchen">
+                <div class="category-info">
+                    <h2>Kitchen Tools</h2>
+                    <p>New cookware, cooking tools, and storage solutions.</p>
+                    <div class="discover-link"><a href="home_essentials.html?cat=kitchen">Discover more in Home</a></div>
+                </div>
+            </div>
+            
+            <div class="category-item">
+                <img src="images/bedroom.jpg" alt="Bedroom">
+                <div class="category-info">
+                    <h2>Bedroom & Bedding</h2>
+                    <p>Comfortable beds, pillows, and stylish bedside tables.</p>
+                    <div class="discover-link"><a href="home_essentials.html?cat=bedroom">Discover more in Home</a></div>
+                </div>
+            </div>
+            
+            <div class="category-item">
+                <img src="images/home-decor.jpg" alt="Decor">
+                <div class="category-info">
+                    <h2>Home Decor</h2>
+                    <p>Modern furniture and decor to give your home a fresh look.</p>
+                    <div class="discover-link"><a href="home_essentials.html?cat=decor">Discover more in Home</a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 1996-2025, Amazon.com</p>
+    </footer>
+</body>
+</html>

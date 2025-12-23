@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Service - Amazon Clone</title>
+    <style>
+        /* Global Styles (Same as Deals) */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #eaeded;
+            color: #131921;
+        }
+
+        /* Header and Nav Styles (Same as Deals) */
+        header {
+            background-color: #131921;
+            color: #fff;
+            padding: 10px 20px;
+        }
+
+        .main-nav {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #ff9900;
+            text-decoration: none;
+            margin-right: 20px;
+        }
+
+        .secondary-nav {
+            background-color: #232f3e;
+            color: #fff;
+            padding: 8px 20px;
+            display: flex;
+            gap: 20px;
+        }
+
+        .secondary-nav a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 14px;
+            padding: 5px 0;
+            border: 1px solid transparent;
+        }
+
+        .secondary-nav a:hover {
+            border: 1px solid #fff;
+            padding: 5px 5px;
+            margin: -5px -5px;
+            border-radius: 2px;
+        }
+
+        /* Customer Service Specific Styles */
+        .service-container {
+            padding: 40px 20px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .service-container h1 {
+            font-size: 32px;
+            color: #007185;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+        
+        .service-container p.subtitle {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #565959;
+        }
+
+        .topic-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+        }
+
+        .topic-card {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+            transition: transform 0.2s;
+        }
+
+        .topic-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .topic-card h2 {
+            font-size: 20px;
+            color: #c45500;
+            margin-top: 0;
+        }
+
+        .topic-card ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .topic-card ul li a {
+            color: #007185;
+            text-decoration: none;
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        .topic-card ul li a:hover {
+            text-decoration: underline;
+        }
+        
+        .contact-us {
+            margin-top: 40px;
+            padding: 30px;
+            background-color: #f7f7f7;
+            border-radius: 8px;
+            text-align: center;
+        }
+        
+        .contact-us button {
+            background-color: #ff9900;
+            color: #131921;
+            padding: 12px 25px;
+            border: none;
+            border-radius: 4px;
+            font-weight: bold;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+        
+        .contact-us button:hover {
+            background-color: #e68a00;
+        }
+
+        /* Footer Styles (Same as Deals) */
+        footer {
+            background-color: #232f3e;
+            color: #fff;
+            padding: 30px 20px;
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        footer a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+            font-size: 14px;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="main-nav">
+            <a href="#" class="logo">amazon</a>
+        </div>
+        <nav class="secondary-nav">
+            <a href="today_deals.html">Today's Deals</a>
+            <a href="prime_video.html">Amazon Prime Video</a>
+            <a href="registry.html">Registry</a>
+            <a href="gift_cards.html">Gift Cards</a>
+            <a href="customer_service.html" style="border: 1px solid #fff;">Customer Service</a>
+            <a href="sell.html">Sell</a>
+        </nav>
+    </header>
+
+    <main class="service-container">
+        <h1>Customer Service</h1>
+        <p class="subtitle">Get help with your orders, account, or any other issue.</p>
+
+        <div class="topic-grid">
+            <div class="topic-card">
+                <h2>Order Related</h2>
+                <ul>
+                    <li><a href="#">Track your order</a></li>
+                    <li><a href="#">Cancel order</a></li>
+                    <li><a href="#">Delivery issues</a></li>
+                    <li><a href="#">Billing questions</a></li>
+                </ul>
+            </div>
+            <div class="topic-card">
+                <h2>Returns & Refunds</h2>
+                <ul>
+                    <li><a href="#">Return an item</a></li>
+                    <li><a href="#">Check refund status</a></li>
+                    <li><a href="#">Return policy</a></li>
+                </ul>
+            </div>
+            <div class="topic-card">
+                <h2>Account Management</h2>
+                <ul>
+                    <li><a href="#">Change password</a></li>
+                    <li><a href="#">Update address & payment</a></li>
+                    <li><a href="#">Prime membership</a></li>
+                    <li><a href="#">Security & privacy</a></li>
+                </ul>
+            </div>
+            <div class="topic-card">
+                <h2>Device Support</h2>
+                <ul>
+                    <li><a href="#">Kindle support</a></li>
+                    <li><a href="#">Fire TV support</a></li>
+                    <li><a href="#">Alexa & Echo devices</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="contact-us">
+            <h2>Talk to Us Directly</h2>
+            <p>If you didn't find a solution above, contact us directly.</p>
+            <button>Contact Us</button>
+        </div>
+    </main>
+
+    <footer>
+        <p><a href="#">Conditions of Use</a> | <a href="#">Privacy Notice</a> | <a href="#">Help</a></p>
+        <p>© 1996-2025, Amazon.com, Inc. or its affiliates</p>
+    </footer>
+</body>
+</html>
